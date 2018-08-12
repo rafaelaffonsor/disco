@@ -15,8 +15,8 @@ class MailController extends Controller
 
         $mailerService = new SendEmail();
 
-        $mailerService->send($req);
+        $result = $mailerService->send($req);
 
-        return Response::create(array('message' => 'e-mail deliveried'));
+        return Response::create($result);
     }
 }
