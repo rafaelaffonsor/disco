@@ -1,0 +1,38 @@
+{
+	"info": {
+		"name": "Disco",
+		"_postman_id": "89e66231-afe4-9bf3-764f-b2866b10a079",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"from\": {\n\t\t\"name\": \"Rafael\",\n\t\t\"email\": \"rafael_affonsor@yahoo.com.br\"\n\t},\n\t\"to\": [\"rafaelaffonsor@gmail.com\", \"rafael_affonsor@yahoo.com.br\"],\n\t\"cc\": [],\n\t\"subject\": \"teste\",\n\t\"body\": {\n\t},\n\t\"template\": \"Default\",\n\t\"attachments\": []\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/send",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"send"
+					]
+				},
+				"description": "Send e-mail with body provided"
+			},
+			"response": []
+		}
+	]
+}

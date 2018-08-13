@@ -24,7 +24,7 @@ class SendEmail
 
             return array('message' => 'e-mail delivered', 'error' => false);
         }
-        
+
         return array('message' => 'missing attributes', 'error' => false);
     }
 }
